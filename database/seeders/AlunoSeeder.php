@@ -10,7 +10,7 @@ class AlunoSeeder extends Seeder
     public function run(): void
     {
         Aluno::create([
-            'nome' => 'João Silva',
+            'nome' => 'Joao Silva',
             'email' => 'joao@example.com',
             'curso_id' => 1,
         ]);
@@ -18,25 +18,25 @@ class AlunoSeeder extends Seeder
         Aluno::create([
             'nome' => 'Maria Souza',
             'email' => 'maria@example.com',
-            'curso_id' => 1,
+            'curso_id' => 2,
         ]);
 
         Aluno::create([
             'nome' => 'Carlos Mendes',
             'email' => 'carlos@example.com',
-            'curso_id' => 2,
+            'curso_id' => 3,
         ]);
 
         Aluno::create([
             'nome' => 'Ana Ribeiro',
             'email' => 'ana@example.com',
-            'curso_id' => 2,
+            'curso_id' => 1,
         ]);
 
         Aluno::create([
             'nome' => 'Lucas Alves',
             'email' => 'lucas@example.com',
-            'curso_id' => 3,
+            'curso_id' => 2,
         ]);
     }
 }

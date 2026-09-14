@@ -11,17 +11,17 @@ class CursoSeeder extends Seeder
     {
         Curso::create([
             'nome' => 'Engenharia de Software',
-            'descricao' => 'Curso de desenvolvimento e engenharia de software.',
+            'descricao' => 'Curso de Engenharia de Software',
         ]);
 
         Curso::create([
-            'nome' => 'Análise e Desenvolvimento de Sistemas',
-            'descricao' => 'Curso voltado para desenvolvimento de sistemas.',
+            'nome' => 'Analise e Desenvolvimento de Sistemas',
+            'descricao' => 'Curso de Analise e Desenvolvimento de Sistemas',
         ]);
 
         Curso::create([
-            'nome' => 'Ciência da Computação',
-            'descricao' => 'Curso voltado para computação e tecnologia.',
+            'nome' => 'Ciencia da Computacao',
+            'descricao' => 'Curso de Ciencia da Computacao',
         ]);
     }
 }
