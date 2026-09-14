@@ -2,6 +2,7 @@
 
 namespace App\Policies;
 
+use App\Enums\Role;
 use App\Models\Aluno;
 use App\Models\User;
 
@@ -19,16 +20,16 @@ class AlunoPolicy
 
     public function create(User $user): bool
     {
-        return $user->role === 'admin';
+        return $user->role === Role::ADMIN;
     }
 
     public function update(User $user, Aluno $aluno): bool
     {
-        return $user->role === 'admin';
+        return $user->role === Role::ADMIN;
     }
 
     public function delete(User $user, Aluno $aluno): bool
     {
-        return $user->role === 'admin';
+        return $user->role === Role::ADMIN;
     }
 }
